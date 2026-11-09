@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos secuenciales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="text-white py-3 px-4 d-flex flex-column align-items-center text-center">
+        <h1>Actividad algoritmos secuenciales.</h1>
+        <p class="mb-0"><strong>Introducción a la algoritmia y pensamiento computacional:</strong><br><br>
+            Cuatro algoritmos secuenciales en PSeInt con su diagrama de flujo generado y probados con al menos
+            dos entradas.</p>
+    </header>
+
+    <main class="container">
+
+        <!-- EJERCICIO 1 -->
+        <section class="p-4 my-4 rounded-4 text-black">
+            <h2 class="text-center mb-3">Área triángulo.</h2>
+            <p>Se desarrolla la secuencia lógica del algoritmo para calcular el área de un triángulo, mediante el
+                ingreso de la base y la altura, aplicando la fórmula matemática correspondiente para obtener el
+                resultado.</p>
+            <div class="bg-white rounded-3 p-3"><pre>
+Algoritmo AreaTriangulo
+    Definir base, altura, area Como Real
+    Escribir "Ingrese la base del triángulo:"
+    Leer base
+    Escribir "Ingrese la altura del triángulo:"
+    Leer altura
+    area <- (base * altura) / 2
+    Escribir "El área del triángulo es: ", area
+FinAlgoritmo</pre></div>
+
+            <h3 class="mb-3">Diagrama de flujo:</h3>
+ 
+            <div class="row justify-content-center mb-3">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <img src="./img/diagrama1.png" alt="Diagrama de flujo área del triángulo"
+                        class="img-fluid d-block mx-auto bg-white p-2 rounded-3">
+                </div>
+            </div>
+
+            <h3 class="mb-3">Pruebas:</h3>
+            <div class="row g-3 justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 h-100">
+                        <img src="./img/triangulo.png" alt="Prueba 1" class="img-fluid">
+                        <p class="text-center mb-0 mt-2">Prueba # 1.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 h-100">
+                        <img src="./img/triangulo2.png" alt="Prueba 2" class="img-fluid">
+                        <p class="text-center mb-0 mt-2">Prueba # 2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EJERCICIO 2 -->
+        <section class="p-4 my-4 rounded-4 text-black">
+            <h2 class="text-center mb-3">Conversión de moneda (USD a moneda local)</h2>
+            <p>Convierte una cantidad dada de dólares estadounidenses (USD) a otra moneda usando una tasa de cambio fija.</p>
+            <div class="bg-white rounded-3 p-3"><pre>
+Algoritmo ConversionMoneda
+	Definir dolares, tasaCambio, resultado Como Real
+	Escribir "Ingrese la cantidad en Dólares (USD):"
+	Leer dolares
+	Escribir "Ingrese la tasa de cambio actual:"
+	Leer tasaCambio
+	resultado <- dolares * tasaCambio
+	Escribir "El valor equivalente es: ", resultado
+FinAlgoritmo</pre></div>
+
+            <h3 class="mb-3">Diagrama de flujo:</h3>
+ 
+            <div class="row justify-content-center mb-3">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <img src="./img/diagrama2.png" alt="Diagrama de flujo conversión de moneda"
+                        class="img-fluid d-block mx-auto bg-white p-2 rounded-3">
+                </div>
+            </div>
+
+            <h3 class="mb-3">Pruebas:</h3>
+            <div class="row g-3 justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 h-100">
+                        <img src="./img/cambio.png" alt="Prueba 1" class="img-fluid">
+                        <p class="text-center mb-0 mt-2">Prueba # 1.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 h-100">
+                        <img src="./img/cambio2.png" alt="Prueba 2" class="img-fluid">
+                        <p class="text-center mb-0 mt-2">Prueba # 2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EJERCICIO 3 -->
+        <section class="p-4 my-4 rounded-4 text-black">
+            <h2 class="text-center mb-3">Cálculo de la edad actual</h2>
+                <p>Calcula la edad aproximada de una persona restando el año de nacimiento del año actual.</p>
+
+            <div class="bg-white rounded-3 p-3"><pre>
+Algoritmo CalcularEdad
+	Definir anioActual, anioNacimiento, edad Como Entero
+	Escribir "Ingrese el año actual:"
+	Leer anioActual
+	Escribir "Ingrese su año de nacimiento:"
+	Leer anioNacimiento
+	edad <- anioActual - anioNacimiento
+	Escribir "Usted tiene (o cumplirá este año): ", edad, " años."
+FinAlgoritmo</pre></div>
+
+            <h3 class="mb-3">Diagrama de flujo:</h3>
+ 
+            <div class="row justify-content-center mb-3">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <img src="./img/diagrama3.png" alt="Diagrama de flujo conversión de moneda"
+                        class="img-fluid d-block mx-auto bg-white p-2 rounded-3">
+                </div>
+            </div>
+
+            <h3 class="mb-3">Pruebas:</h3>
+            <div class="row g-3 justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 h-100">
+                        <img src="./img/edad1.png" alt="Prueba 1" class="img-fluid">
+                        <p class="text-center mb-0 mt-2">Prueba # 1.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 h-100">
+                        <img src="./img/edad2.png" alt="Prueba 2" class="img-fluid">
+                        <p class="text-center mb-0 mt-2">Prueba # 2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EJERCICIO 4 -->
+        <section class="p-4 my-4 rounded-4 text-black">
+            <h2 class="text-center mb-3">Promedio de tres calificaciones</h2>
+                <p>Toma tres notas parciales de un estudiante, calcula su promedio aritmético y muestra el resultado final.</p>
+
+            <div class="bg-white rounded-3 p-3"><pre>
+Algoritmo PromedioNotas
+	Definir nota1, nota2, nota3, promedio Como Real
+	Escribir "Ingrese la primera nota:"
+	Leer nota1
+	Escribir "Ingrese la segunda nota:"
+	Leer nota2
+	Escribir "Ingrese la tercera nota:"
+	Leer nota3
+	promedio <- (nota1 + nota2 + nota3) / 3
+	Escribir "El promedio final es: ", promedio
+FinAlgoritmo</pre></div>
+
+            <h3 class="mb-3">Diagrama de flujo:</h3>
+ 
+            <div class="row justify-content-center mb-3">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <img src="./img/diagrama4.png" alt="Diagrama de flujo conversión de moneda"
+                        class="img-fluid d-block mx-auto bg-white p-2 rounded-3">
+                </div>
+            </div>
+
+            <h3 class="mb-3">Pruebas:</h3>
+            <div class="row g-3 justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 h-100">
+                        <img src="./img/edad1.png" alt="Prueba 1" class="img-fluid">
+                        <p class="text-center mb-0 mt-2">Prueba # 1.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card p-3 h-100">
+                        <img src="./img/edad2.png" alt="Prueba 2" class="img-fluid">
+                        <p class="text-center mb-0 mt-2">Prueba # 2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-white text-center p-2">
+        <p class="mb-0">Algoritmia | Actividad algoritmos secuenciales</p>
+    </footer>
+
+</body>
+</html>
